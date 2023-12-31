@@ -13,7 +13,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: url('abc.jpg') center/cover no-repeat;
+            background: url('abc.jpg') center/cover no-repeat #000;
             color: white;
             font-family: 'Helvetica Neue', sans-serif;
         }
@@ -31,38 +31,14 @@
             font-size: 1.2em;
             margin-bottom: 30px;
         }
-
-        input[type="file"] {
-            display: none;
-        }
-
-        label {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #000;
-            color: #fff;
-            cursor: pointer;
-            border-radius: 5px;
-            font-size: 1em;
-        }
     </style>
 </head>
 
 <body>
     <div id="content">
         <h1>Coming Soon</h1>
-        <p id="description"> Hi! My name is Shweta Bedekar. This is my new website where I will showcase my work soon. Stay tuned! </p>
-        
+        <p id="description">Write about yourself here.</p>
     </div>
-
-    <script>
-        document.getElementById('backgroundInput').addEventListener('change', function (e) {
-            const file = e.target.files[0];
-            if (file) {
-                document.body.style.background = `url('${URL.createObjectURL(file)}') center/cover no-repeat`;
-            }
-        });
-    </script>
 </body>
 
 </html>
